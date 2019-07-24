@@ -1,0 +1,8 @@
+<table class="table table-hover">
+    <tr *ngFor="let task of list">
+      <td (click)="populateForm(task)">[{{task.Titulo}}]</td>
+      <td (click)="populateForm(task)">{{task.Descricao}}</td>
+      <td (click)="populateForm(task)">{{task.Ativo}}</td>
+      <td><button (click)="onDelete(task.Id)" class="btn btn-sm btn-outline-danger">X</button></td>
+    </tr>
+  </table>
